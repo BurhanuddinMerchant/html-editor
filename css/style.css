@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 1em;
   height: 500px;
-  width: 50%;
+  width: 45%;
   min-width: 500px;
   font-size: 1em;
   margin-bottom: 1em;
@@ -36,15 +36,23 @@ body {
 #output {
   margin: 0;
   height: 500px;
-  width: 50%;
+  width: 45%;
   margin-left: 0;
   min-width: 500px;
-  margin-top: 1em;
-  border: black 2px solid;
+  /* margin-top: 1em; */
+  /* border: black 2px solid; */
+
+  border: var(--lightBlack) 10px solid;
+  padding: 1em;
 }
-#display-button {
-  width: fit-content;
-  padding: 0.25em;
-  font-size: 1rem;
-  margin: 1em auto;
+@media (max-width: 700px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  #output {
+    width: 90%;
+  }
+  #editor {
+    width: 90%;
+  }
 }
