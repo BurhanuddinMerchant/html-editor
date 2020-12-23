@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: yellow 2px solid; */
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+#editor {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  width: 45%;
+  min-width: 500px;
+  margin: auto;
+  /* border: chartreuse 2px solid; */
+}
+#output {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  width: 45%;
+  min-width: 500px;
+  border: black 2px solid;
+}
