@@ -1,25 +1,50 @@
+:root {
+  --darkBlack: #2f2519;
+  --lightBlack: #4a3f35;
+  --orange: #fa7d09;
+  --darkOrange: #ff4301;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+}
 .wrapper {
+  text-align: left;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   /* border: yellow 2px solid; */
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  justify-content: space-evenly;
 }
 #editor {
+  background-color: var(--darkBlack);
+  border: var(--lightBlack) 10px solid;
+  color: var(--darkOrange);
   margin: 0;
-  padding: 0;
+  padding: 1em;
   height: 500px;
-  width: 45%;
+  width: 50%;
   min-width: 500px;
-  margin: auto;
+  font-size: 1em;
+  margin-bottom: 1em;
   /* border: chartreuse 2px solid; */
 }
 #output {
   margin: 0;
-  padding: 0;
   height: 500px;
-  width: 45%;
+  width: 50%;
+  margin-left: 0;
   min-width: 500px;
+  margin-top: 1em;
   border: black 2px solid;
+}
+#display-button {
+  width: fit-content;
+  padding: 0.25em;
+  font-size: 1rem;
+  margin: 1em auto;
 }
